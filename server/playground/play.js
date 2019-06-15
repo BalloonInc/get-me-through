@@ -6,7 +6,7 @@
 console.log('hii');
 console.log(__dirname);
 var spawn = require('child_process').spawn,
-    py = spawn('python', [String(__dirname) + '/my_script.py'], { stdio: ['pipe', 'pipe', 'pipe', 'ipc'] });
+    py = spawn('python3', [String(__dirname) + '/my_script.py'], { stdio: ['pipe', 'pipe', 'pipe', 'ipc'] });
 // py    = spawn('python', [String(__dirname) +'/feed_data.py']);
 var stdin = process.openStdin();
 

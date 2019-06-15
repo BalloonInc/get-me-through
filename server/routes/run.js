@@ -18,7 +18,7 @@ module.exports = function (io) {
 
         function sendLiveUpdates() {
             var spawn = require('child_process').spawn,
-                py = spawn('python', [String(__dirname) + '/../py/run.py']);
+                py = spawn('python3', [String(__dirname) + '/../py/run.py']);
 
             // Store pid of py to kill if client needs
             pid = py.pid;

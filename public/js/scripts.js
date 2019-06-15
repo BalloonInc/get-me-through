@@ -124,7 +124,7 @@ $(document).ready(
             $(this).addClass('disabled');
             // $("a[href='#app-run']").addClass('disabled');
             $.ajax({
-                url: 'http://localhost:3000/train'
+                url: 'train'
             })
                 .done(function (data) {
                     var $toastContent = $('<span><i class="material-icons">done</i>Training Successfull!</span>');
@@ -148,7 +148,7 @@ $(document).ready(
         $('#clear-button').on('click', function() {
             $(this).addClass('disabled');
             $.ajax({
-                url:'http://localhost:3000/train/clear'
+                url:'train/clear'
             })
             .done(function(data) {
                 var $toastContent = $('<span><i class="material-icons">done</i>Data cleared successfully!</span>');

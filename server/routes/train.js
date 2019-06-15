@@ -5,7 +5,7 @@ let router = express.Router();
 
 router.get('/', function(req, res) {
     var spawn = require('child_process').spawn,
-    py    = spawn('python', [String(__dirname)+'/../py/train.py']);
+    py    = spawn('python3', [String(__dirname)+'/../py/train.py']);
 
     py.stderr.on('data', (data) => {
         console.log(`train.js -> stderr: ${data}`);

@@ -111,7 +111,7 @@ def main():
                     other += 1
                     name += str(other)
                 face_names.append(name)
-            print(face_names, flush=True)
+            print(face_names)
         process_this_frame = not process_this_frame
 
         #Display the border
